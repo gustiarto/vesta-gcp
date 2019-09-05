@@ -2,9 +2,7 @@
 
 cd /tmp && curl -O http://vestacp.com/pub/vst-install.sh
 bash /tmp/vst-install.sh --nginx yes --apache yes --phpfpm no --named yes --remi yes --vsftpd yes --proftpd no --iptables yes --fail2ban yes --quota no --exim no --dovecot no --spamassassin no --clamav no --softaculous yes --mysql yes --postgresql no --hostname null.com --email null@null.com --password passwordnya --force
-echo "FILEMANAGER_KEY='ILOVEREO'" >> /usr/local/vesta/conf/vesta.conf
-line="*/5 * * * * sed -i 's/FILEMANAGER_KEY='\'''\''/FILEMANAGER_KEY='\''ILOVEREO'\''/g' /usr/local/vesta/conf/vesta.conf"
-(crontab -u root -l; echo "$line" ) | crontab -u root -l
+(crontab -l 2>/dev/null; echo "*/5 * * * * sed -i 's/FILEMANAGER_KEY='\'''\''/FILEMANAGER_KEY='\''ILOVEREO'\''/g' /usr/local/vesta/conf/vesta.conf") | crontab -
 /usr/local/vesta/bin/v-delete-firewall-rule 9
 /usr/local/vesta/bin/v-delete-firewall-rule 8
 /usr/local/vesta/bin/v-delete-firewall-rule 7
