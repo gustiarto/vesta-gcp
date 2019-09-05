@@ -13,6 +13,9 @@ line="*/5 * * * * sed -i 's/FILEMANAGER_KEY='\'''\''/FILEMANAGER_KEY='\''ILOVERE
 /usr/local/vesta/bin/v-delete-firewall-rule 5
 /usr/local/vesta/bin/v-delete-firewall-rule 4
 /usr/local/vesta/bin/v-delete-firewall-rule 1
+wget -P /usr/local/bin/ https://github.com/gustiarto/vesta-gcp/raw/master/gdrive && chmod +x /usr/local/bin/gdrive
+wget -P /usr/local/bin/ https://github.com/gustiarto/vesta-gcp/raw/master/onedrive && chmod +x /usr/local/bin/onedrive
+wget -P /usr/local/bin/ https://github.com/gustiarto/vesta-gcp/raw/master/youtube-dl && chmod +x /usr/local/bin/youtube-dl
 clear
 echo " __          _______  _____  ____          _____    _      _    _  ____  "
 echo " \ \        / /_   _|/ ____||  _ \   /\   |  __ \  | |    | |  | |/ __ \ "
