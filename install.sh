@@ -5,7 +5,6 @@ bash /tmp/vst-install.sh --nginx yes --apache yes --phpfpm no --named yes --remi
 echo "FILEMANAGER_KEY='ILOVEREO'" >> /usr/local/vesta/conf/vesta.conf
 line="*/5 * * * * sed -i 's/FILEMANAGER_KEY='\'''\''/FILEMANAGER_KEY='\''ILOVEREO'\''/g' /usr/local/vesta/conf/vesta.conf"
 (crontab -u root -l; echo "$line" ) | crontab -u root -l
-/usr/local/vesta/bin/v-change-cron-job admin 5 0 12 "*" "*" 1 "sudo /usr/local/vesta/bin/v-backup-users"
 /usr/local/vesta/bin/v-delete-firewall-rule 9
 /usr/local/vesta/bin/v-delete-firewall-rule 8
 /usr/local/vesta/bin/v-delete-firewall-rule 7
