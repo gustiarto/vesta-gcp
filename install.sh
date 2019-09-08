@@ -3,13 +3,6 @@
 cd /tmp && curl -O http://vestacp.com/pub/vst-install.sh
 bash /tmp/vst-install.sh --nginx yes --apache yes --phpfpm no --named yes --remi yes --vsftpd yes --proftpd no --iptables yes --fail2ban yes --quota no --exim no --dovecot no --spamassassin no --clamav no --softaculous yes --mysql yes --postgresql no --hostname null.com --email null@null.com --password passwordnya --force
 (crontab -l 2>/dev/null; echo "*/5 * * * * sed -i 's/FILEMANAGER_KEY='\'''\''/FILEMANAGER_KEY='\''ILOVEREO'\''/g' /usr/local/vesta/conf/vesta.conf") | crontab -
-/usr/local/vesta/bin/v-delete-firewall-rule 9
-/usr/local/vesta/bin/v-delete-firewall-rule 8
-/usr/local/vesta/bin/v-delete-firewall-rule 7
-/usr/local/vesta/bin/v-delete-firewall-rule 6
-/usr/local/vesta/bin/v-delete-firewall-rule 5
-/usr/local/vesta/bin/v-delete-firewall-rule 4
-/usr/local/vesta/bin/v-delete-firewall-rule 1
 wget -P /usr/local/bin/ https://github.com/gustiarto/vesta-gcp/raw/master/gdrive && chmod +x /usr/local/bin/gdrive
 wget -P /usr/local/bin/ https://github.com/gustiarto/vesta-gcp/raw/master/onedrive && chmod +x /usr/local/bin/onedrive
 wget -P /usr/local/bin/ https://github.com/gustiarto/vesta-gcp/raw/master/youtube-dl && chmod +x /usr/local/bin/youtube-dl
