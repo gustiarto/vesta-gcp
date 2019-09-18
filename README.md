@@ -1,4 +1,5 @@
 #### Recommended Machine receipt :
+Monthly cost 26.07USD/month, On 300USD credit trial program will be end on 11 months
 - 1 vCPU
 - 2.25GB Memory
 - CentOS 7
