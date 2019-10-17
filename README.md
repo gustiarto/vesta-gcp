@@ -18,6 +18,7 @@ Monthly cost 26.07USD/month, On 300USD credit trial program will be end on 11 mo
       - Email
       - Password
     - Copy from result "Install Command" on these webpage.
+    
   > bash vst-install.sh ......
   
   > wget https://raw.githubusercontent.com/gustiarto/vesta-gcp/master/install.sh
